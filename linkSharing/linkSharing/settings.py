@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ibaker',
         'USER' : 'ibaker',
-        'PASSWORD' : '********',
-        'HOST' : '*******',
+        'PASSWORD' : '****',
+        'HOST' : '**********.com',
     }
 }
 
@@ -126,3 +126,7 @@ STATIC_ROOT=''
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/view'
+LOGOUT_REDIRECT_URL = '/'
+
+ADMIN_SITE_HEADER = "tfp admin"
+ADMIN_SITE_TITLE = "TFP Mapping"

@@ -10,7 +10,7 @@
   <p>Your user ID is: {{ user.id }}</p>
     <h1><a href='/view'>view links</a></h1>
     
-    <h3><a href='/accounts/logout/'>Logout</a></h3>
+    <h3><a href='{% url 'logout' %}'>Logout</a></h3>
   
 
 {% else %}
