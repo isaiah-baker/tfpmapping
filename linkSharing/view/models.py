@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 class Link(models.Model):
     link_name = models.CharField(max_length=200)
     url = models.CharField(max_length=200)
-    # user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     pub_date = models.DateTimeField('date published')
 
