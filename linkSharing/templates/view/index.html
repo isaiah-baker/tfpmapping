@@ -9,12 +9,14 @@
   <h2>Hello <em>{{ user.username }}</em>!</h2>
   <p>Your user ID is: {{ user.id }}</p>
     <h1><a href='/view'>view links</a></h1>
+    
     <h3><a href='/accounts/logout/'>Logout</a></h3>
   
 
 {% else %}
   <h1>Welcome to TFPMapping</h1>
   <h3>You are not logged in: <span><a href="{% url 'login' %}">login</a></span></h3>
+  <h3><a href="/admin">admin</a></h3>
   
 {% endif %}
 {% endblock %}

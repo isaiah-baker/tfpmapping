@@ -6,8 +6,10 @@
 
     {% for link in link_list %}
         {% if user.id == link.user.id %}
+            <div class="link">
             <h3>Location: {{ link.link_name }}</h3>
-            <h2> <a href="{{link.link_text}}">{{ link.link_text}} </a></h2>
+            <h3><a href="{{link.url}}">{{ link.url}} </a></h3>
+            </div>
         {% endif %}
     {% endfor %}
     
